@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
 import pickle
-
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)
 # Load the saved model once when the app starts
 model = pickle.load(open('loan_prediction_model.pkl', 'rb'))
 
