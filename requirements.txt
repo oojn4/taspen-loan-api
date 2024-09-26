@@ -1,4 +1,4 @@
 Flask
 jsonify
 gunicorn 
-sklearn
+scikit-learn
